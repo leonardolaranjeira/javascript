@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema de verificação de nacionalidade</title>
+
+</head>
+
+<body>
+    <h1>Sitema de Verificação de nacionalidade</h1>
+    
+    <input type="text" name="ident" id="ident" placeholder="Digite seu país">
+    <input type="button" value="Verificar" onclick="Verificar()">
+    <div id="res" style="margin-top: 10px; font-weight: bold;">
+
+    </div>
+
+    <script>
+        function Verificar() {
+            var pais = document.getElementById("ident")
+            var res = document.getElementById("res")
+            if (pais.value.toLowerCase() != 'brasil') {
+                res.innerHTML = 'Você é estrangeiro!'
+            } else {
+                res.innerHTML = 'Você é brasileiro!'
+            }
+        }
+    </script>
+</body>
+</html>
