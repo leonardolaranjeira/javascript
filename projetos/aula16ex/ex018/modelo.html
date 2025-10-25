@@ -8,15 +8,23 @@
 </head>
 <body>
     <header>
-        <h1>Título</h1>
+        <h1>Analisador de números</h1>
     </header>
     <section>
-        <div>
-            Testando...
+        <div id="formnum">
+            Número (Entre 1 à 100):
+            <input type="number" name="num" id="num">
+            <input type="button" value="Adicionar" onclick="atribuirValor()">
         </div>
-        <div>
 
+        <select name="lista" id="lista" size="6"></select>
+        
+        <div id="lis">
+            <input type="button" value="Finalizar" onclick="resultado()">
+            <span id="erro"></span>
         </div>
+
+        <div id="res"></div>
     </section>
     <footer>
         <p>&copy; Leonardo Laranjeira</p>
